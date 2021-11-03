@@ -1,20 +1,16 @@
 class Bank {
-    constructor(billsArray = bills, clientsArray = clients) {
-        this.bills = billsArray;
-        this.clients = clientsArray;
-    }
-
-    getAmountDebtorAndAllSumDebt(isActive) {
+    
+    getAmountDebtorAndAllSumDebt(isActive, billsArray = bills, clientsArray = clients) {
         // debugger
         let sumAllDebt = 0;
         let countDebtor = 0;
         let result = {};
 
-        for (let item of this.clients) {
+        for (let item of clientsArray) {
             if (item.isActive === isActive) {
                 let bill = item.bill;
 
-                for (let data of this.bills) {
+                for (let data of billsArray) {
                     if (data.bill === bill) {
 
                         for (let card of data.cards) {
@@ -64,13 +60,13 @@ class Bank {
         return coefficient;
     }
 
-    async getSumAllMoneyBank(currency) {
+    async getSumAllMoneyBank(currency, billsArray = bills) {
         // debugger
         let sumAllMoneyBank = 0;
         let sumMoneyInHryvnia = 0;
         let sumAllMoneyClient = 0;
 
-        for (let bill of this.bills) {
+        for (let bill of billsArray) {
             for (let card of bill.cards) {
 
                 if (card.currency === 'UAH') {
@@ -83,14 +79,14 @@ class Bank {
         }
         sumAllMoneyBank = sumMoneyInHryvnia / await this.getCurrentCoefficient(currency);
 
-        return sumAllMoneyBank.toFixed(2);
+        return console.log(sumAllMoneyBank.toFixed(2));
     }
 
-    async getSumAllDebtAccounts(currency) {
+    async getSumAllDebtAccounts(currency, billsArray = bills) {
         let sumAllDebtClient = 0;
         let sumDebtInHryvnia = 0;
         let sumDebtClient = 0;
-        for (let bill of this.bills) {
+        for (let bill of billsArray) {
             for (let card of bill.cards) {
                 if (card.currency === 'UAH') {
                     sumDebtInHryvnia += card.limit - card.funds;
@@ -102,7 +98,7 @@ class Bank {
         }
         sumAllDebtClient = sumDebtInHryvnia / await this.getCurrentCoefficient(currency);
 
-        return sumAllDebtClient.toFixed(2);
+        return console.log(sumAllDebtClient.toFixed(2));
     }
 
 }

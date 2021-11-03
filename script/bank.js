@@ -79,7 +79,7 @@ class Bank {
         }
         sumAllMoneyBank = sumMoneyInHryvnia / await this.getCurrentCoefficient(currency);
 
-        return console.log(sumAllMoneyBank.toFixed(2));
+        return sumAllMoneyBank.toFixed(2);
     }
 
     async getSumAllDebtAccounts(currency, billsArray = bills) {
@@ -98,7 +98,7 @@ class Bank {
         }
         sumAllDebtClient = sumDebtInHryvnia / await this.getCurrentCoefficient(currency);
 
-        return console.log(sumAllDebtClient.toFixed(2));
+        return sumAllDebtClient.toFixed(2);
     }
 
 }

@@ -1,16 +1,19 @@
 class Bank {
-    
-    getAmountDebtorAndAllSumDebt(isActive, billsArray = bills, clientsArray = clients) {
-        // debugger
+    constructor() {
+        this.clientsArray = clients;
+        this.billsArray = bills;
+    }
+
+    getAmountDebtorAndAllSumDebt(isActive) {
         let sumAllDebt = 0;
         let countDebtor = 0;
         let result = {};
 
-        for (let item of clientsArray) {
+        for (let item of this.clientsArray) {
             if (item.isActive === isActive) {
                 let bill = item.bill;
 
-                for (let data of billsArray) {
+                for (let data of this.billsArray) {
                     if (data.bill === bill) {
 
                         for (let card of data.cards) {
@@ -60,13 +63,13 @@ class Bank {
         return coefficient;
     }
 
-    async getSumAllMoneyBank(currency, billsArray = bills) {
+    async getSumAllMoneyBank(currency) {
         // debugger
         let sumAllMoneyBank = 0;
         let sumMoneyInHryvnia = 0;
         let sumAllMoneyClient = 0;
 
-        for (let bill of billsArray) {
+        for (let bill of this.billsArray) {
             for (let card of bill.cards) {
 
                 if (card.currency === 'UAH') {
@@ -82,11 +85,12 @@ class Bank {
         return sumAllMoneyBank.toFixed(2);
     }
 
-    async getSumAllDebtAccounts(currency, billsArray = bills) {
+    async getSumAllDebtAccounts(currency) {
         let sumAllDebtClient = 0;
         let sumDebtInHryvnia = 0;
         let sumDebtClient = 0;
-        for (let bill of billsArray) {
+
+        for (let bill of this.billsArray) {
             for (let card of bill.cards) {
                 if (card.currency === 'UAH') {
                     sumDebtInHryvnia += card.limit - card.funds;

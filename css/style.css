@@ -1,0 +1,307 @@
+html {
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .choiceFirst,
+header .choiceSecond {
+  width: 50px;
+}
+
+header .amount {
+  width: 80px;
+}
+
+header .resultAllSum,
+header .resultArrears,
+header .resultSumClient {
+  width: 100px;
+  height: 15px;
+  margin: 5px 0;
+  border: solid black 1px;
+}
+
+header .resultAmountClient {
+  width: 25px;
+  height: 15px;
+  border: solid black 1px;
+}
+
+header .allMoney,
+header .allDebt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .amountClients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .add {
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.main .add::before {
+  content: "\2795";
+}
+
+.main .blockClients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .blockClients .card {
+  width: 250px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 20px 10px 0;
+  border-radius: 15px;
+  border: 1px solid #dddada;
+  -webkit-box-shadow: 0 0 5px #dddada;
+          box-shadow: 0 0 5px #dddada;
+  background-color: whitesmoke;
+}
+
+.main .blockClients .card div {
+  margin: 10px 0;
+}
+
+.main .blockClients .card button {
+  width: 70px;
+  height: 20px;
+  margin-left: 10px;
+  background-color: #a8f1f1;
+  border-radius: 5px;
+}
+
+.modalInfo {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  background-color: rgba(22, 22, 22, 0.5);
+}
+
+.modalInfo.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modalInfo .modalContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  background: white;
+}
+
+.modalInfo .modalContainer .blockCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 50px;
+  overflow: auto;
+}
+
+.modalInfo .modalContainer .clientInfo,
+.modalInfo .modalContainer .cardInfo {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 20px 10px 0;
+  border-radius: 15px;
+  border: 1px solid #dddada;
+  -webkit-box-shadow: 0 0 5px #dddada;
+          box-shadow: 0 0 5px #dddada;
+  background-color: whitesmoke;
+}
+
+.modalInfo .modalContainer .clientInfo div,
+.modalInfo .modalContainer .cardInfo div {
+  margin: 10px 0;
+}
+
+.modalInfo .modalContainer .clientInfo button,
+.modalInfo .modalContainer .cardInfo button {
+  width: 70px;
+  height: 20px;
+  margin-left: 10px;
+  background-color: #a8f1f1;
+  border-radius: 5px;
+}
+
+.modalInfo .modalContainer .add {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  margin-right: 50px;
+}
+
+.modalInfo .modalContainer .add::before {
+  content: "\2795";
+}
+
+.modalInfo .modalContainerEditClient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 15px;
+  background: white;
+}
+
+.modalInfo .modalContainerEditClient #addClient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.modalInfo .modalContainerEditClient .idClient {
+  visibility: hidden;
+}
+
+.modalInfo .modalContainerEditClient .button {
+  width: 70px;
+  height: 20px;
+  margin: 10px 5px;
+  background-color: #a8f1f1;
+  border-radius: 5px;
+}
+
+.modalInfo .modalContainerEditClient button {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.modalInfo .modalContainerEditCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 15px;
+  background: white;
+}
+
+.modalInfo .modalContainerEditCard #addCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.modalInfo .modalContainerEditCard .idClient {
+  visibility: hidden;
+}
+
+.modalInfo .modalContainerEditCard .button {
+  width: 70px;
+  height: 20px;
+  margin: 10px 5px;
+  background-color: #a8f1f1;
+  border-radius: 5px;
+}
+
+.modalInfo .modalContainerEditCard button {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@ const clients = [
         name: 'Игорь',
         patronymic: 'Андреевич',
         isActive: true,
-        registration: '29/05/2017',
+        registration: '2017-05-29',
         bill: 123451,
     },
     {
@@ -14,7 +14,7 @@ const clients = [
         name: 'Света',
         patronymic: 'Петровна',
         isActive: false,
-        registration: '21/10/2001',
+        registration: '2001-10-21',
         bill: 123452,
     },
     {
@@ -23,7 +23,7 @@ const clients = [
         name: 'Олег',
         patronymic: 'Сергеевич',
         isActive: true,
-        registration: '11/04/2000',
+        registration: '2000-04-11',
         bill: 123453,
     },
     {
@@ -32,7 +32,7 @@ const clients = [
         name: 'Елена',
         patronymic: 'Антоновна',
         isActive: false,
-        registration: '07/06/2019',
+        registration: '2019-06-07',
         bill: 123454,
     },
     {
@@ -41,7 +41,7 @@ const clients = [
         name: 'Ольга',
         patronymic: 'Владимировна',
         isActive: true,
-        registration: '05/11/2012',
+        registration: '2012-11-05',
         bill: 123455,
     },
     {
@@ -50,7 +50,7 @@ const clients = [
         name: 'Петр',
         patronymic: 'Андреевич',
         isActive: true,
-        registration: '10/08/2012',
+        registration: '2012-08-10',
         bill: 123456,
     },
     {
@@ -59,7 +59,7 @@ const clients = [
         name: 'Андрей',
         patronymic: 'Максимович',
         isActive: true,
-        registration: '15/03/2016',
+        registration: '2016-03-15',
         bill: 123457,
     },
     {
@@ -68,7 +68,7 @@ const clients = [
         name: 'Анастасия',
         patronymic: 'Антоновна',
         isActive: true,
-        registration: '17/12/2013',
+        registration: '2013-12-17',
         bill: 123458,
     },
     {
@@ -77,7 +77,7 @@ const clients = [
         name: 'Игорь',
         patronymic: 'Степанович',
         isActive: false,
-        registration: '09/06/1997',
+        registration: '1997-06-09',
         bill: 123459,
     },
     {
@@ -86,7 +86,7 @@ const clients = [
         name: 'Максим',
         patronymic: 'Филлипович',
         isActive: true,
-        registration: '11/03/2019',
+        registration: '2019-03-11',
         bill: 123460,
     },
     {
@@ -95,7 +95,7 @@ const clients = [
         name: 'Андрей',
         patronymic: 'Петрович',
         isActive: true,
-        registration: '15/05/2018',
+        registration: '2018-05-15',
         bill: 123461,
     },
     {
@@ -104,7 +104,7 @@ const clients = [
         name: 'Владимир',
         patronymic: 'Сергеевич',
         isActive: true,
-        registration: '21/12/2003',
+        registration: '2003-12-21',
         bill: 123462,
     },
     {
@@ -113,7 +113,7 @@ const clients = [
         name: 'Андрей',
         patronymic: 'Степанович',
         isActive: true,
-        registration: '16/07/2001',
+        registration: '2001-07-16',
         bill: 123463,
     },
     {
@@ -122,7 +122,7 @@ const clients = [
         name: 'Нина',
         patronymic: 'Игоревна',
         isActive: true,
-        registration: '03/07/2000',
+        registration: '2000-07-03',
         bill: 123464,
     },
     {
@@ -131,7 +131,7 @@ const clients = [
         name: 'Валентина',
         patronymic: 'Федоровна',
         isActive: true,
-        registration: '04/09/2012',
+        registration: '2012-09-04',
         bill: 123465,
     },
     {
@@ -140,7 +140,7 @@ const clients = [
         name: 'Артем',
         patronymic: 'Олегович',
         isActive: true,
-        registration: '12/03/2016',
+        registration: '2016-03-12',
         bill: 123466,
     },
     {
@@ -149,7 +149,7 @@ const clients = [
         name: 'Света',
         patronymic: 'Сергеевна',
         isActive: true,
-        registration: '22/05/2019',
+        registration: '2019-05-22',
         bill: 123467,
     },
     {
@@ -158,7 +158,7 @@ const clients = [
         name: 'Андрей',
         patronymic: 'Петрович',
         isActive: true,
-        registration: '09/09/2007',
+        registration: '2007-09-09',
         bill: 123468,
     },
     {
@@ -167,7 +167,7 @@ const clients = [
         name: 'Максим',
         patronymic: 'Васильевич',
         isActive: false,
-        registration: '04/11/2015',
+        registration: '2015-11-04',
         bill: 123469,
     },
     {
@@ -176,7 +176,7 @@ const clients = [
         name: 'Вячеслав',
         patronymic: 'Сергеевич',
         isActive: true,
-        registration: '01/02/2013',
+        registration: '2013-02-01',
         bill: 123470,
     },
 
